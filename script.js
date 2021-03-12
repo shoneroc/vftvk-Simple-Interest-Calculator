@@ -1,5 +1,10 @@
 <script>
-function compute()
+
+    function show_value(x)
+{
+ document.getElementById("slider_value").innerHTML=x;
+}
+    function compute()
 {
     p = document.getElementById("principal").value;
     var principal = p;
@@ -21,8 +26,4 @@ function compute()
 }
 
 
-function show_value(x)
-{
- document.getElementById("slider_value").innerHTML=x;
-}
 </script>
