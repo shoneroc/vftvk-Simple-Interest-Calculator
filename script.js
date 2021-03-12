@@ -21,7 +21,8 @@ function compute()
 }
 
 
-function updateTextInput(val) {
-          document.getElementById('slider_value').value=val; 
-        }
+function show_value(x)
+{
+ document.getElementById("slider_value").innerHTML=x;
+}
 </script>
