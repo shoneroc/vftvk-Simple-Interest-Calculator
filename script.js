@@ -1,4 +1,4 @@
-<script>
+
 
     function show_value(x)
 {
@@ -24,6 +24,3 @@
     
     
 }
-
-
-</script>
