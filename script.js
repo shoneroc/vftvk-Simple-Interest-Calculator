@@ -21,8 +21,7 @@ function compute()
 }
 
 
-function myFunction() {
-    var x = document.getElementById("rate").value;
-    document.getElementById("Rate").innerHTML = x;
-}
+function updateTextInput(val) {
+          document.getElementById('rate').value=val; 
+        }
 </script>
