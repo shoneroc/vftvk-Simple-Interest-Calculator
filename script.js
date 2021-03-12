@@ -1,3 +1,4 @@
+<script>
 function compute()
 {
     p = document.getElementById("principal").value;
@@ -12,21 +13,16 @@ function compute()
     var interest = (principal*years*rate)/100;
     
     var d = new.Date();
-    var future_years = m+d.getFullYear();
+    var future_years = d.getFullYear() + years;
     
     
     
     
 }
 
-function read_span()
-{
-  s = document.getElementByID("rate").value;
-  var slider = document.getElementByID("result");
-    slider.innerHTML = s.value;
-    
-    s.onchange=
-    
-    
-    
+
+function myFunction() {
+    var x = document.getElementById("rate").value;
+    document.getElementById("Rate").innerHTML = x;
 }
+</script>
