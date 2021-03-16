@@ -2,7 +2,7 @@ function compute()
 {
     p = document.getElementById("principal").value;
 
-    var principal = document.getElementById("principal").value;
+    var principal = p;
     principal = Number(principal);
     var rate = document.getElementById("rate").value;
     rate = parseFloat(rate);
