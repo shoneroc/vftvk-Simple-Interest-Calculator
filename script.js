@@ -1,22 +1,15 @@
-
-
-    function show_value(x)
-{
- document.getElementById("slider_value").innerHTML=x;
-}
-    function compute()
+function compute()
 {
     p = document.getElementById("principal").value;
-    var principal = number(p);
-    
-    q = document.getElementById("rate").value;
-    var rate = number(q);
-    
-    m = document.getElementById("years").value;
-    var years = number(m);
-    
-    var interest = principal*years*rate/100;
-    
+
+    var principal = document.getElementById("principal").value;
+    principal = Number(principal);
+    var rate = document.getElementById("rate").value;
+    rate = parseFloat(rate);
+    var years = document.getElementById("years").value;
+    years = Number(years);
+    var interest = principal * years * rate / 100;
+
     if (validatePrincipal() === true) {
 
         var currentDate = new Date();
@@ -32,13 +25,15 @@
         result.innerHTML = output;
     
     }
-}
 
+}
+        
 function showRange() 
 {
     var rate = document.getElementById("rate").value;
     document.getElementById("rate").nextElementSibling.innerHTML = rate + ' %';
 }
+
 function validatePrincipal()
 {
     var principal = document.getElementById("principal").value;
@@ -51,4 +46,3 @@ function validatePrincipal()
         return true;
     }
 }
-
